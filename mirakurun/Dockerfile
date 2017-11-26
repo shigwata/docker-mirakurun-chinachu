@@ -47,9 +47,10 @@ RUN set -x \
 	&& make \
 	&& make install \
 	\
-	# recpt1
-	&& git clone https://github.com/stz2012/recpt1 /tmp/recpt1 \
-	&& cd /tmp/recpt1/recpt1 \
+	# recdvb
+	&& git clone https://github.com/k-pi/recdvb /tmp/recdvb \
+	&& cd /tmp/recdvb \
+	&& chmod +x ./autogen.sh \
 	&& ./autogen.sh \
 	&& ./configure --enable-b25 \
 	&& sed -i '/#include <sys\/msg.h>/d' recpt1core.h \

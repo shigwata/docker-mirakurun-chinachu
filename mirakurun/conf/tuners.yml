@@ -2,24 +2,24 @@
   types:
     - BS
     - CS
-  command: recpt1 --b25 --device /dev/pt3video0 <channel> - -
+  command: recdvb --b25 --dev 0 <channel> - -
   isDisabled: false
 
 - name: PT3-S1
   types:
     - BS
     - CS
-  command: recpt1 --b25 --device /dev/pt3video1 <channel> - -
+  command: recdvb --b25 --dev 2 <channel> - -
   isDisabled: false
 
 - name: PT3-T0
   types:
     - GR
-  command: recpt1 --b25 --device /dev/pt3video2 <channel> - -
+  command: recdvb --b25 --dev 1 <channel> - -
   isDisabled: false
 
 - name: PT3-T1
   types:
     - GR
-  command: recpt1 --b25 --device /dev/pt3video3 <channel> - -
+  command: recdvb --b25 --dev 3 <channel> - -
   isDisabled: false
