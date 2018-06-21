@@ -11,6 +11,7 @@ services:
      - /etc/localtime:/etc/localtime:ro
      - ./mirakurun/conf:/usr/local/etc/mirakurun
      - ./mirakurun/db:/usr/local/var/db/mirakurun
+    restart: always
 
   chinachu:
     build:
@@ -31,3 +32,4 @@ services:
      - ./recorded:/usr/local/chinachu/recorded
     links:
      - mirakurun:container-mirakurun
+    restart: always
